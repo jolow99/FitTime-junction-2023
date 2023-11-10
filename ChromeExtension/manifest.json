@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Your Extension Name",
+  "name": "FitTime",
   "version": "1.0",
-  "description": "Description of your extension",
+  "description": "Gamify your exercise by converting it into screentime!",
   "permissions": ["activeTab"],
   "browser_action": {
     "default_popup": "popup.html",
