@@ -12,6 +12,11 @@
 		00CDD7A12AFECDC9008CF4B8 /* ScreenTimeSelectApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CDD7A02AFECDC9008CF4B8 /* ScreenTimeSelectApps.swift */; };
 		00CDD7A32AFECE4C008CF4B8 /* ParentalMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CDD7A22AFECE4C008CF4B8 /* ParentalMainView.swift */; };
 		00CDD7AA2AFF7EFC008CF4B8 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CDD7A92AFF7EFC008CF4B8 /* UserDefaultsManager.swift */; };
+		827AEDA62AFFADFF009B1916 /* MonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827AEDA22AFFADFE009B1916 /* MonitorExtension.swift */; };
+		827AEDA72AFFADFF009B1916 /* TotalActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827AEDA32AFFADFF009B1916 /* TotalActivityReport.swift */; };
+		827AEDA82AFFADFF009B1916 /* TotalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827AEDA42AFFADFF009B1916 /* TotalActivityView.swift */; };
+		827AEDA92AFFADFF009B1916 /* AppDeviceActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827AEDA52AFFADFF009B1916 /* AppDeviceActivity.swift */; };
+		827AEDAB2AFFAE12009B1916 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827AEDAA2AFFAE12009B1916 /* ChartView.swift */; };
 		82DBDFFF2AFE0CC9005CFBEB /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DBDFFE2AFE0CC9005CFBEB /* LandmarksApp.swift */; };
 		82DBE0012AFE0CC9005CFBEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DBE0002AFE0CC9005CFBEB /* ContentView.swift */; };
 		82DBE0032AFE0CCA005CFBEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DBE0022AFE0CCA005CFBEB /* Assets.xcassets */; };
@@ -25,6 +30,11 @@
 		00CDD7A02AFECDC9008CF4B8 /* ScreenTimeSelectApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeSelectApps.swift; sourceTree = "<group>"; };
 		00CDD7A22AFECE4C008CF4B8 /* ParentalMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalMainView.swift; sourceTree = "<group>"; };
 		00CDD7A92AFF7EFC008CF4B8 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		827AEDA22AFFADFE009B1916 /* MonitorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorExtension.swift; sourceTree = "<group>"; };
+		827AEDA32AFFADFF009B1916 /* TotalActivityReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalActivityReport.swift; sourceTree = "<group>"; };
+		827AEDA42AFFADFF009B1916 /* TotalActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalActivityView.swift; sourceTree = "<group>"; };
+		827AEDA52AFFADFF009B1916 /* AppDeviceActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDeviceActivity.swift; sourceTree = "<group>"; };
+		827AEDAA2AFFAE12009B1916 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		82DBDFFB2AFE0CC9005CFBEB /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DBDFFE2AFE0CC9005CFBEB /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		82DBE0002AFE0CC9005CFBEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +64,7 @@
 		00CDD7A62AFF7E70008CF4B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				827AEDAA2AFFAE12009B1916 /* ChartView.swift */,
 				82DBE0002AFE0CC9005CFBEB /* ContentView.swift */,
 				00087D7D2AFE9FF800656E7E /* ChildFlowView.swift */,
 				00CDD7A22AFECE4C008CF4B8 /* ParentalMainView.swift */,
@@ -72,6 +83,10 @@
 		00CDD7A82AFF7ED9008CF4B8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				827AEDA52AFFADFF009B1916 /* AppDeviceActivity.swift */,
+				827AEDA22AFFADFE009B1916 /* MonitorExtension.swift */,
+				827AEDA32AFFADFF009B1916 /* TotalActivityReport.swift */,
+				827AEDA42AFFADFF009B1916 /* TotalActivityView.swift */,
 				00CDD7A92AFF7EFC008CF4B8 /* UserDefaultsManager.swift */,
 			);
 			path = Utilities;
@@ -190,9 +205,14 @@
 				00CDD7A32AFECE4C008CF4B8 /* ParentalMainView.swift in Sources */,
 				00087D7C2AFE9F6900656E7E /* UserDataModel.swift in Sources */,
 				00CDD7AA2AFF7EFC008CF4B8 /* UserDefaultsManager.swift in Sources */,
+				827AEDA82AFFADFF009B1916 /* TotalActivityView.swift in Sources */,
 				00087D7E2AFE9FF800656E7E /* ChildFlowView.swift in Sources */,
 				82DBE0012AFE0CC9005CFBEB /* ContentView.swift in Sources */,
+				827AEDA72AFFADFF009B1916 /* TotalActivityReport.swift in Sources */,
+				827AEDA92AFFADFF009B1916 /* AppDeviceActivity.swift in Sources */,
+				827AEDA62AFFADFF009B1916 /* MonitorExtension.swift in Sources */,
 				82DBDFFF2AFE0CC9005CFBEB /* LandmarksApp.swift in Sources */,
+				827AEDAB2AFFAE12009B1916 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
