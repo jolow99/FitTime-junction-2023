@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00087D7C2AFE9F6900656E7E /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00087D7B2AFE9F6900656E7E /* UserDataModel.swift */; };
+		00087D7E2AFE9FF800656E7E /* ChildFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00087D7D2AFE9FF800656E7E /* ChildFlowView.swift */; };
+		00CDD7A12AFECDC9008CF4B8 /* ScreenTimeSelectApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CDD7A02AFECDC9008CF4B8 /* ScreenTimeSelectApps.swift */; };
+		00CDD7A32AFECE4C008CF4B8 /* ParentalMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CDD7A22AFECE4C008CF4B8 /* ParentalMainView.swift */; };
+		00CDD7AA2AFF7EFC008CF4B8 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CDD7A92AFF7EFC008CF4B8 /* UserDefaultsManager.swift */; };
 		82DBDFFF2AFE0CC9005CFBEB /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DBDFFE2AFE0CC9005CFBEB /* LandmarksApp.swift */; };
 		82DBE0012AFE0CC9005CFBEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DBE0002AFE0CC9005CFBEB /* ContentView.swift */; };
 		82DBE0032AFE0CCA005CFBEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DBE0022AFE0CCA005CFBEB /* Assets.xcassets */; };
@@ -14,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00087D7B2AFE9F6900656E7E /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		00087D7D2AFE9FF800656E7E /* ChildFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildFlowView.swift; sourceTree = "<group>"; };
+		00087D7F2AFEC92E00656E7E /* Landmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Landmarks.entitlements; sourceTree = "<group>"; };
+		00CDD7A02AFECDC9008CF4B8 /* ScreenTimeSelectApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeSelectApps.swift; sourceTree = "<group>"; };
+		00CDD7A22AFECE4C008CF4B8 /* ParentalMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalMainView.swift; sourceTree = "<group>"; };
+		00CDD7A92AFF7EFC008CF4B8 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		82DBDFFB2AFE0CC9005CFBEB /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DBDFFE2AFE0CC9005CFBEB /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		82DBE0002AFE0CC9005CFBEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +43,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00087D7A2AFE9F5700656E7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00087D7B2AFE9F6900656E7E /* UserDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00CDD7A62AFF7E70008CF4B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				82DBE0002AFE0CC9005CFBEB /* ContentView.swift */,
+				00087D7D2AFE9FF800656E7E /* ChildFlowView.swift */,
+				00CDD7A22AFECE4C008CF4B8 /* ParentalMainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00CDD7A72AFF7E99008CF4B8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				00CDD7A02AFECDC9008CF4B8 /* ScreenTimeSelectApps.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		00CDD7A82AFF7ED9008CF4B8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				00CDD7A92AFF7EFC008CF4B8 /* UserDefaultsManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		82DBDFF22AFE0CC9005CFBEB = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +96,12 @@
 		82DBDFFD2AFE0CC9005CFBEB /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				00087D7F2AFEC92E00656E7E /* Landmarks.entitlements */,
 				82DBDFFE2AFE0CC9005CFBEB /* LandmarksApp.swift */,
-				82DBE0002AFE0CC9005CFBEB /* ContentView.swift */,
+				00CDD7A72AFF7E99008CF4B8 /* ViewModels */,
+				00CDD7A62AFF7E70008CF4B8 /* Views */,
+				00087D7A2AFE9F5700656E7E /* Models */,
+				00CDD7A82AFF7ED9008CF4B8 /* Utilities */,
 				82DBE0022AFE0CCA005CFBEB /* Assets.xcassets */,
 				82DBE0042AFE0CCA005CFBEB /* Preview Content */,
 			);
@@ -137,6 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CDD7A12AFECDC9008CF4B8 /* ScreenTimeSelectApps.swift in Sources */,
+				00CDD7A32AFECE4C008CF4B8 /* ParentalMainView.swift in Sources */,
+				00087D7C2AFE9F6900656E7E /* UserDataModel.swift in Sources */,
+				00CDD7AA2AFF7EFC008CF4B8 /* UserDefaultsManager.swift in Sources */,
+				00087D7E2AFE9FF800656E7E /* ChildFlowView.swift in Sources */,
 				82DBE0012AFE0CC9005CFBEB /* ContentView.swift in Sources */,
 				82DBDFFF2AFE0CC9005CFBEB /* LandmarksApp.swift in Sources */,
 			);
@@ -264,9 +318,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Landmarks/Landmarks.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
+				DEVELOPMENT_TEAM = D4Z6HSM6WG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -279,7 +335,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = personal.Landmarks;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.Landmarks.yahia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -292,9 +348,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Landmarks/Landmarks.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
+				DEVELOPMENT_TEAM = D4Z6HSM6WG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -307,7 +365,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = personal.Landmarks;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.Landmarks.yahia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

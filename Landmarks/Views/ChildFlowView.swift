@@ -11,6 +11,9 @@ import Charts
 var firstUser = UserDataModel(steps: 8898, minutesUsed: 69, minutesLeft: 21, potentialMinutes: 30)
 
 struct ChildFlowView: View {
+    
+    @EnvironmentObject var model: ScreenTimeSelectApps
+    
     var body: some View {
         VStack {
             VStack() {
@@ -68,6 +71,11 @@ struct ChildFlowView: View {
                         .foregroundColor(.white)
                         .cornerRadius(12)
                 }
+            }
+        }
+        .onAppear {
+            Task {
+                print(self.model.activitySelection.applications)
             }
         }
     }
