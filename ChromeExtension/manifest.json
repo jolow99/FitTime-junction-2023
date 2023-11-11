@@ -3,7 +3,7 @@
   "name": "FitTime",
   "version": "1.0",
   "description": "Gamify your exercise by converting it into screentime!",
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab", "webNavigation", "tabs"],
   "browser_action": {
     "default_popup": "popup.html"
   },
