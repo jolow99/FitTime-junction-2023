@@ -11,7 +11,7 @@ import FamilyControls
 @main
 struct LandmarksApp: App {
     
-    @ObservedObject var screenTimeSelection: ScreenTimeSelectApps = ScreenTimeSelectApps()
+    @StateObject var screenTimeSelection: ScreenTimeSelectApps = ScreenTimeSelectApps()
     
     var body: some Scene {
         WindowGroup {
@@ -21,12 +21,14 @@ struct LandmarksApp: App {
                     print("Init")
                     
                     let appSelection = screenTimeSelection.loadSelection()
-                    
-                    print(appSelection)
+
+                    //print(appSelection?.applications)
                     
                     if appSelection != nil {
                         screenTimeSelection.activitySelection = appSelection!
+                        print("Moved to the observable")
                     }
+                    
                 }
         }
     }

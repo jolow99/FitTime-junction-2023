@@ -16,6 +16,18 @@ struct ChildFlowView: View {
     
     var body: some View {
         VStack {
+            
+            HStack {
+                Spacer()
+                
+                Button {
+                    model.deleteSelection()
+                } label: {
+                    Image(systemName: "wrench.and.screwdriver.fill")
+                        .padding(.trailing, 10)
+                }
+            }
+            
             VStack() {
                 Text(String(firstUser.steps))
                     .font(.system(size: 50))
@@ -76,6 +88,8 @@ struct ChildFlowView: View {
         .onAppear {
             Task {
                 print(self.model.activitySelection.applications)
+                model.saveSelection()
+                print("DEBUG: APPS SELECTED \(model.activitySelection.applications)")
             }
         }
     }

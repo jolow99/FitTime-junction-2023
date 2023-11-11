@@ -15,10 +15,9 @@ class ScreenTimeSelectApps: ObservableObject {
     init() {
     }
     
-    func saveSelection(selection: FamilyActivitySelection) {
+    func saveSelection() {
         let defaults = UserDefaults.standard
-        if let encoded = try? JSONEncoder().encode(selection) {
-            print(selection)
+        if let encoded = try? JSONEncoder().encode(self.activitySelection) {
             print("selection above, encoded below")
             print(encoded)
             defaults.set(encoded, forKey: "SelectedApps")
@@ -35,7 +34,13 @@ class ScreenTimeSelectApps: ObservableObject {
                 return loadedSelection
             }
         }
-        return nil // Return a default or empty selection if nothing is saved
+        return nil
     }
-
+    
+    func deleteSelection() {
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "SelectedApps")
+        self.activitySelection = FamilyActivitySelection()
+    }
+    
 }
