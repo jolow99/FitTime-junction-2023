@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		00087D7C2AFE9F6900656E7E /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00087D7B2AFE9F6900656E7E /* UserDataModel.swift */; };
 		00087D7E2AFE9FF800656E7E /* ChildFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00087D7D2AFE9FF800656E7E /* ChildFlowView.swift */; };
+		002656C52B00559800A977BE /* DeviceActivityCenterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002656C42B00559800A977BE /* DeviceActivityCenterVM.swift */; };
+		00ABEAFA2AFFC39E0062C808 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ABEAF92AFFC39E0062C808 /* ChartView.swift */; };
 		00CDD7A12AFECDC9008CF4B8 /* ScreenTimeSelectApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CDD7A02AFECDC9008CF4B8 /* ScreenTimeSelectApps.swift */; };
 		00CDD7A32AFECE4C008CF4B8 /* ParentalMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CDD7A22AFECE4C008CF4B8 /* ParentalMainView.swift */; };
 		00CDD7AA2AFF7EFC008CF4B8 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CDD7A92AFF7EFC008CF4B8 /* UserDefaultsManager.swift */; };
@@ -22,6 +24,8 @@
 		00087D7B2AFE9F6900656E7E /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 		00087D7D2AFE9FF800656E7E /* ChildFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildFlowView.swift; sourceTree = "<group>"; };
 		00087D7F2AFEC92E00656E7E /* Landmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Landmarks.entitlements; sourceTree = "<group>"; };
+		002656C42B00559800A977BE /* DeviceActivityCenterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityCenterVM.swift; sourceTree = "<group>"; };
+		00ABEAF92AFFC39E0062C808 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		00CDD7A02AFECDC9008CF4B8 /* ScreenTimeSelectApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeSelectApps.swift; sourceTree = "<group>"; };
 		00CDD7A22AFECE4C008CF4B8 /* ParentalMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalMainView.swift; sourceTree = "<group>"; };
 		00CDD7A92AFF7EFC008CF4B8 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
@@ -51,12 +55,20 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		002656C62B005C0300A977BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		00CDD7A62AFF7E70008CF4B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				82DBE0002AFE0CC9005CFBEB /* ContentView.swift */,
 				00087D7D2AFE9FF800656E7E /* ChildFlowView.swift */,
 				00CDD7A22AFECE4C008CF4B8 /* ParentalMainView.swift */,
+				00ABEAF92AFFC39E0062C808 /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -65,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				00CDD7A02AFECDC9008CF4B8 /* ScreenTimeSelectApps.swift */,
+				002656C42B00559800A977BE /* DeviceActivityCenterVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -72,6 +85,7 @@
 		00CDD7A82AFF7ED9008CF4B8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				002656C62B005C0300A977BE /* Extensions */,
 				00CDD7A92AFF7EFC008CF4B8 /* UserDefaultsManager.swift */,
 			);
 			path = Utilities;
@@ -188,11 +202,13 @@
 			files = (
 				00CDD7A12AFECDC9008CF4B8 /* ScreenTimeSelectApps.swift in Sources */,
 				00CDD7A32AFECE4C008CF4B8 /* ParentalMainView.swift in Sources */,
+				002656C52B00559800A977BE /* DeviceActivityCenterVM.swift in Sources */,
 				00087D7C2AFE9F6900656E7E /* UserDataModel.swift in Sources */,
 				00CDD7AA2AFF7EFC008CF4B8 /* UserDefaultsManager.swift in Sources */,
 				00087D7E2AFE9FF800656E7E /* ChildFlowView.swift in Sources */,
 				82DBE0012AFE0CC9005CFBEB /* ContentView.swift in Sources */,
 				82DBDFFF2AFE0CC9005CFBEB /* LandmarksApp.swift in Sources */,
+				00ABEAFA2AFFC39E0062C808 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

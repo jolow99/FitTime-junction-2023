@@ -21,8 +21,11 @@ struct ContentView: View {
                     ParentalMainView()
                 } else {
                     ChildFlowView()
+                    ChartView()
                 }
             }
+
+            
         }
         .environmentObject(screenTimeSelection)
         .onAppear {
@@ -34,7 +37,6 @@ struct ContentView: View {
                 }
             }
         }
-        
     }
 }
 

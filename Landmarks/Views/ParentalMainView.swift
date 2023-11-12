@@ -22,12 +22,5 @@ struct ParentalMainView: View {
             isPresented: $pickerIsPresented,
             selection: $model.activitySelection
         )
-//        .onChange(of: pickerIsPresented) { bool in
-//            
-//            if !bool {
-//                model.saveSelection()
-//                print("DEBUG: IS APPS EMPTY?? \(model.activitySelection.applications.isEmpty)")
-//            }
-//        }
     }
 }

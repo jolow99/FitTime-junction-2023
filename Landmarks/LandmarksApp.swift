@@ -7,16 +7,20 @@
 
 import SwiftUI
 import FamilyControls
+import DeviceActivity
+
 
 @main
 struct LandmarksApp: App {
-    
     @StateObject var screenTimeSelection: ScreenTimeSelectApps = ScreenTimeSelectApps()
+    @StateObject var deviveActivityCenter: DeviceActivityCenterVM = DeviceActivityCenterVM()
     
     var body: some Scene {
         WindowGroup {
+            
             ContentView()
                 .environmentObject(screenTimeSelection)
+                .environmentObject(deviveActivityCenter)
                 .onAppear {
                     print("Init")
                     
